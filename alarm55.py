@@ -16,7 +16,7 @@ def alarm():
         print(currenttime,alarmtime)
         if currenttime==alarmtime:
             print("Alarm!!!!")
-            winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
+            winsound.Beep(2000,2500)
 Label(root,text="BUILDING AN ALARM CLOCK",font=("Georgia 24 bold"),fg="green",bg="pink").pack(pady=50)
 Label(root,text="SET THE TIME ",font=("Arial 50 italic"),fg="red",bg="yellow").pack(pady=60)
 frame = Frame(root)
